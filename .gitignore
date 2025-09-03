@@ -1,0 +1,23 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Project exclude paths
+/shared/animation/animation/build/
+/shared/animation/animation-core/build/
+/shared/build/
+/shared/components/material/build/
+/shared/foundation/build/
+/shared/runtime/build/
