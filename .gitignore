@@ -21,3 +21,4 @@ local.properties
 /shared/components/material/build/
 /shared/foundation/build/
 /shared/runtime/build/
+/shared/core/build/
