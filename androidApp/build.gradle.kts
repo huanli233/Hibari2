@@ -38,7 +38,7 @@ android {
 
 dependencies {
     implementation(project(":shared:components:material"))
-    implementation(project(":shared:animation:animation"))
+//    implementation(project(":shared:animation:animation"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

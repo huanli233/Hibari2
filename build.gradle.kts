@@ -22,3 +22,9 @@ subprojects {
         }
     }
 }
+
+allprojects {
+    configurations.all {
+//        exclude(group = "androidx.compose.ui", module = "ui")
+    }
+}

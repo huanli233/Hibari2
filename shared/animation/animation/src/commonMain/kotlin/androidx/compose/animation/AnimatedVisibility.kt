@@ -37,11 +37,10 @@ import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
-import com.huanli233.hibari2.runtime.layout.IntrinsicMeasureScope
-import com.huanli233.hibari2.runtime.layout.Measurable
-import com.huanli233.hibari2.runtime.layout.MeasurePolicy
-import com.huanli233.hibari2.runtime.layout.MeasureResult
-import com.huanli233.hibari2.runtime.layout.MeasureScope
+import com.huanli233.hibari2.core.layout.Measurable
+import com.huanli233.hibari2.core.layout.MeasurePolicy
+import com.huanli233.hibari2.core.layout.MeasureResult
+import com.huanli233.hibari2.core.layout.MeasureScope
 import androidx.compose.ui.platform.debugInspectorInfo
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.IntSize
@@ -50,8 +49,8 @@ import androidx.compose.ui.util.fastMap
 import androidx.compose.ui.util.fastMaxOfOrDefault
 import com.huanli233.hibari2.foundation.layout.ColumnScope
 import com.huanli233.hibari2.foundation.layout.RowScope
-import com.huanli233.hibari2.runtime.composable.HibariLayout
-import com.huanli233.hibari2.runtime.modifier.layout
+import com.huanli233.hibari2.core.composable.HibariLayout
+import com.huanli233.hibari2.core.modifier.layout
 import kotlin.math.max
 
 /**

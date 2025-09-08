@@ -30,14 +30,16 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(project(":shared:runtime"))
+                api(project(":shared:foundation"))
                 api(libs.androidx.core.ktx)
                 api(libs.androidx.appcompat)
+//                api(project(":shared:compose-runtime:runtime"))
                 api(libs.compose.runtime)
             }
         }
         val androidMain by getting {
             dependencies {
+//                api(project(":shared:ui:ui"))
                 api(libs.compose.ui)
                 api(libs.material)
             }

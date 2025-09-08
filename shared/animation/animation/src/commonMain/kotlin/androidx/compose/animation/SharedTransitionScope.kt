@@ -67,10 +67,10 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.addOutline
 import androidx.compose.ui.graphics.drawscope.ContentDrawScope
 import androidx.compose.ui.graphics.drawscope.DrawScope
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.layout.LayoutCoordinates
-import androidx.compose.ui.layout.LookaheadScope
-import androidx.compose.ui.layout.layout
+import com.huanli233.hibari2.core.layout.ContentScale
+import com.huanli233.hibari2.core.layout.LayoutCoordinates
+import com.huanli233.hibari2.core.layout.LookaheadScope
+import com.huanli233.hibari2.core.layout.layout
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.LayoutDirection

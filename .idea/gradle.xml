@@ -17,8 +17,8 @@
             <option value="$PROJECT_DIR$/shared/animation/animation-core" />
             <option value="$PROJECT_DIR$/shared/components" />
             <option value="$PROJECT_DIR$/shared/components/material" />
+            <option value="$PROJECT_DIR$/shared/core" />
             <option value="$PROJECT_DIR$/shared/foundation" />
-            <option value="$PROJECT_DIR$/shared/runtime" />
           </set>
         </option>
       </GradleProjectSettings>

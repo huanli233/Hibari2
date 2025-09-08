@@ -50,17 +50,13 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
-import androidx.compose.ui.layout.IntrinsicMeasurable
-import androidx.compose.ui.layout.IntrinsicMeasureScope
-import androidx.compose.ui.layout.Layout
-import com.huanli233.hibari2.runtime.layout.Measurable
-import com.huanli233.hibari2.runtime.layout.MeasurePolicy
-import com.huanli233.hibari2.runtime.layout.MeasureResult
-import com.huanli233.hibari2.runtime.layout.MeasureScope
-import androidx.compose.ui.layout.ParentDataModifier
-import androidx.compose.ui.layout.Placeable
-import androidx.compose.ui.layout.layout
-import androidx.compose.ui.node.ModifierNodeElement
+import com.huanli233.hibari2.core.layout.Measurable
+import com.huanli233.hibari2.core.layout.MeasurePolicy
+import com.huanli233.hibari2.core.layout.MeasureResult
+import com.huanli233.hibari2.core.layout.MeasureScope
+import com.huanli233.hibari2.core.layout.ParentDataModifier
+import com.huanli233.hibari2.core.layout.layout
+import com.huanli233.hibari2.core.node.ModifierNodeElement
 import androidx.compose.ui.platform.InspectorInfo
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.Constraints
@@ -70,8 +66,7 @@ import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.util.fastForEach
 import androidx.compose.ui.util.fastForEachIndexed
-import androidx.compose.ui.util.fastMaxOfOrNull
-import com.huanli233.hibari2.runtime.composable.HibariLayout
+import com.huanli233.hibari2.core.composable.HibariLayout
 
 /**
  * [AnimatedContent] is a container that automatically animates its content when [targetState]
@@ -873,7 +868,7 @@ private class AnimatedContentMeasurePolicy(val rootScope: AnimatedContentTransit
         measurables: List<Measurable>,
         constraints: Constraints,
     ): MeasureResult {
-        val placeables = arrayOfNulls<com.huanli233.hibari2.runtime.layout.Placeable>(measurables.size)
+        val placeables = arrayOfNulls<com.huanli233.hibari2.core.layout.Placeable>(measurables.size)
         var targetSize = IntSize.Zero
 
         measurables.fastForEachIndexed { index, measurable ->
